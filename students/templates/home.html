@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content%}
+<div class="container d-flex flex-wrap justify-content-between">
+  <div class="card mb-3">
+    <img src="./assets/registr.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+    <h5 class="card-title">All Students Profile</h5>
+    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    <a href= "{% url "allStudents" %}" button type="button" class="btn btn-primary">All Students</a>
+    </div>
+  </div>
+  <div class="card mb-3">
+    <img src="./assets/registr.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+    <h5 class="card-title">Add Student Profile</h5>
+    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    <a href= "{% url "addStudent" %}" button type="button" class="btn btn-primary">Add Students</a>
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}
